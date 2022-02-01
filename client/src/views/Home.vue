@@ -66,6 +66,10 @@
         </v-btn>
       </v-row>
     </transition>
+    <v-footer app bottom fixed padless class="footer">
+      <a class="centerLink" href="https://www.freepik.com/vectors/music">Background image
+        created by stories - www.freepik.com</a>
+    </v-footer>
   </v-container>
 </template>
 
@@ -142,5 +146,14 @@ p, h1 {
 .slide-x-reverse-enter, .slide-reverse-x-leave-to {
   transform: translateX(-30px);
   opacity: 0;
+}
+
+.footer {
+  background: none!important;
+  padding-bottom: 5px!important;
+}
+
+.centerLink {
+  margin: 0 auto;
 }
 </style>

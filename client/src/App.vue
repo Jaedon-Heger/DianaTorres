@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue, Watch } from 'vue-property-decorator';
 import Background from '@/components/Background.vue';
 import AppHeader from '@/components/AppHeader.vue';
 
@@ -23,7 +23,9 @@ import AppHeader from '@/components/AppHeader.vue';
   },
 })
 export default class App extends Vue {
-
+  created(): void {
+    document.title = 'Diana Torres'
+  }
 }
 </script>
 
