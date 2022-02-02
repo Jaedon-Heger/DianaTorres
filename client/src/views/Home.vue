@@ -23,8 +23,8 @@
         </transition>
       </v-col>
     </v-row>
-    <transition appear name="slide-x-reverse">
-      <v-row v-show="showContent">
+    <transition-group appear name="slide-x-reverse" v-show="showContent">
+      <v-row key="content-row-1">
         <v-btn
           href="https://github.com/vuetifyjs/vuetify/releases/latest"
           target="_blank"
@@ -35,11 +35,9 @@
           <p class="ml-3 mt-4">dianatorres.rr@hotmail.com</p>
         </v-btn>
       </v-row>
-      <div v-show="showContent" class="divider"/>
-    </transition>
+      <div key="content-divider-1" class="divider"/>
 
-    <transition appear name="slide-x-reverse">
-      <v-row v-show="showContent">
+      <v-row key="content-row-2">
         <v-btn
           href="https://github.com/vuetifyjs/vuetify/releases/latest"
           target="_blank"
@@ -50,11 +48,9 @@
           <p class="ml-3 mt-4">+52 614 408 1151</p>
         </v-btn>
       </v-row>
-      <div v-show="showContent" class="divider"/>
-    </transition>
+      <div key="content-divider-2" class="divider"/>
 
-    <transition appear name="slide-x-reverse">
-      <v-row v-show="showContent">
+      <v-row key="content-row-3">
         <v-btn
           href="https://github.com/vuetifyjs/vuetify/releases/latest"
           target="_blank"
@@ -65,7 +61,7 @@
           <p class="ml-3 mt-4">LinkedIn</p>
         </v-btn>
       </v-row>
-    </transition>
+    </transition-group>
     <v-footer app bottom fixed padless class="footer">
       <a class="centerLink" href="https://www.freepik.com/vectors/music">Background image
         created by stories - www.freepik.com</a>

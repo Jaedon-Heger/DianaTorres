@@ -5,7 +5,7 @@
       dark
   >
     <div class="d-flex align-center">
-      <h3>Diana Torres</h3>
+      <h1 class="headerLogo">Diana Torres</h1>
     </div>
 
     <v-spacer></v-spacer>
@@ -48,6 +48,13 @@ export default class AppHeader extends Vue {
 
 <style scoped lang="scss">
  @import "../assets/styles/styles.scss";
+
+ .headerLogo{
+   font-family: 'Great Vibes', cursive;
+   color: $text-primary!important;
+   font-size: 3em;
+   padding-top: 5px!important;
+ }
 
  h3,.icon {
    color: $text-primary!important;
